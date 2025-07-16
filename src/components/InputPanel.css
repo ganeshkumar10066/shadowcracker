@@ -1,0 +1,270 @@
+.input-panel {
+    background: linear-gradient(135deg, rgba(17, 17, 34, 0.95), rgba(17, 17, 34, 0.85));
+    border: 1px solid var(--highlight);
+    border-radius: 12px;
+    padding: 35px;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(0, 204, 255, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent,
+        var(--highlight),
+        transparent
+    );
+    animation: scan 2s linear infinite;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.panel-header h2 {
+    margin: 0;
+    font-size: 22px;
+    color: var(--text-color);
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.3);
+    text-align: left;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 1;
+    margin-right: auto;
+    position: relative;
+}
+
+.instagram-icon {
+    color: var(--highlight);
+    width: 1.4em;
+    height: 1.4em;
+    flex-shrink: 0;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 8px rgba(0, 204, 255, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1);
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(0, 204, 255, 0.3);
+}
+
+.input-field {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(68, 0, 136, 0.2);
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--highlight);
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    max-width: 100%;
+}
+
+.analyze-button {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00ff00;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #00ff00;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.15s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    min-height: 45px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+}
+
+.analyze-button:hover {
+    background-color: rgba(0, 255, 0, 0.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.analyze-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.1);
+}
+
+.button-text {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+/* Remove all animation-related styles */
+.button-glitch,
+.analyze-button::before,
+.analyze-button::after {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-panel {
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    .panel-header {
+        margin-bottom: 25px;
+    }
+
+    .input-form {
+        gap: 20px;
+    }
+
+    .input-group {
+        gap: 10px;
+    }
+
+    .panel-header h2 {
+        font-size: 20px;
+    }
+
+    .input-group label {
+        font-size: 14px;
+    }
+
+    .input-field {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .analyze-button {
+        max-width: 100%;
+        padding: 10px 15px;
+        font-size: 15px;
+        min-height: 40px;
+        letter-spacing: 0.8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-panel {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .panel-header {
+        margin-bottom: 20px;
+    }
+
+    .input-form {
+        gap: 15px;
+    }
+
+    .input-group {
+        gap: 8px;
+    }
+
+    .panel-header h2 {
+        font-size: 18px;
+    }
+
+    .input-group label {
+        font-size: 13px;
+    }
+
+    .input-field {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .analyze-button {
+        max-width: 100%;
+        padding: 8px 12px;
+        font-size: 14px;
+        min-height: 35px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .analyze-button {
+        padding: 6px 10px;
+        font-size: 13px;
+        min-height: 32px;
+        letter-spacing: 0.3px;
+    }
+} 
