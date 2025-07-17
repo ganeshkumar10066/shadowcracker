@@ -14,7 +14,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || 'https://rare-starfish-58.telebit.io',
+        target: process.env.VITE_API_URL || 'https://lambda-smithsonian-syria-ata.trycloudflare.com',
         changeOrigin: true,
         secure: false
       }
