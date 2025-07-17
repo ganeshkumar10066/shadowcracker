@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://rare-starfish-58.telebit.io') + '/api';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://lambda-smithsonian-syria-ata.trycloudflare.com') + '/api';
 
 // List of session cookies (sessionid and csrftoken pairs)
 const accounts = [
