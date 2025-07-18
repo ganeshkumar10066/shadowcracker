@@ -9,7 +9,7 @@ export const processPayment = async (userData) => {
             };
         }
 
-        const API_URL = import.meta.env.VITE_API_URL || 'https://6e4f02c764ac.ngrok-free.app';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com';
         const response = await fetch(`${API_URL}/api/payment/process`, {
             method: 'POST',
             headers: {
