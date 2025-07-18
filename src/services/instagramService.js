@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://lambda-smithsonian-syria-ata.trycloudflare.com') + '/api';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://6e4f02c764ac.ngrok-free.app') + '/api';
 
 // List of session cookies (sessionid and csrftoken pairs)
 const accounts = [
