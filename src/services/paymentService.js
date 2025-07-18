@@ -9,7 +9,7 @@ export const processPayment = async (userData) => {
             };
         }
 
-        const API_URL = import.meta.env.VITE_API_URL || 'https://lambda-smithsonian-syria-ata.trycloudflare.com';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://6e4f02c764ac.ngrok-free.app';
         const response = await fetch(`${API_URL}/api/payment/process`, {
             method: 'POST',
             headers: {
