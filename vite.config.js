@@ -14,7 +14,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || 'https://lambda-smithsonian-syria-ata.trycloudflare.com',
+        target: process.env.VITE_API_URL || 'https://6e4f02c764ac.ngrok-free.app',
         changeOrigin: true,
         secure: false
       }
