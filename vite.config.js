@@ -14,7 +14,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || 'https://60925f39703c0c.lhr.life/',
+        target: process.env.VITE_API_URL || 'https://60925f39703c0c.lhr.life',
         changeOrigin: true,
         secure: false
       }
