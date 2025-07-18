@@ -63,7 +63,7 @@ const PaymentSuccess: React.FC = () => {
         setError(null);
         
         try {
-            const API_URL = import.meta.env.VITE_API_URL || 'https://lambda-smithsonian-syria-ata.trycloudflare.com';
+            const API_URL = import.meta.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com';
             const response = await fetch(`${API_URL}/api/payment/inquiry`, {
                 method: 'POST',
                 headers: {
