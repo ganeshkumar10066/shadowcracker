@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://6e4f02c764ac.ngrok-free.app') + '/api';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com') + '/api';
 
 export const calculatePrice = async (userData) => {
     if (!userData || !userData.username) return null;
