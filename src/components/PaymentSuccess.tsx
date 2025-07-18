@@ -86,7 +86,7 @@ const PaymentSuccess: React.FC = () => {
 
             if (data.code === 0 && data.data?.status === 1) {
                 // Payment successful, get password
-                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+                const API_URL = import.meta.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com';
                 const verifyResponse = await fetch(`${API_URL}/api/payment/verify/${orderId}`);
                 const verifyData = await verifyResponse.json();
 
