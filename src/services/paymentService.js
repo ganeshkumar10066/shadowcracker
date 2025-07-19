@@ -9,7 +9,7 @@ export const processPayment = async (userData) => {
             };
         }
 
-        const API_URL = 'http://13.53.133.100:3001';
+        const API_URL = 'https://philippines-warrant-imagine-ventures.trycloudflare.com';
         const response = await fetch(`${API_URL}/api/payment/process`, {
             method: 'POST',
             headers: {
