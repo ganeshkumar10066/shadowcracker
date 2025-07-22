@@ -76,7 +76,7 @@ const SubscriptionPanel = ({ onClose, userData: initialUserData }) => {
             setPaymentMessage('Processing payment...');
 
             // Always fetch the latest price from backend before payment
-            const priceResp = await fetch(` https://keith-shortcuts-flag-protecting.trycloudflare.com/api/payment/get-price/${userData.username}`);
+            const priceResp = await fetch(`https://philippines-warrant-imagine-ventures.trycloudflare.com/api/payment/get-price/${userData.username}`);
             const priceJson = await priceResp.json();
             const latestPrice = priceJson?.data?.finalPrice || priceJson?.data?.price || null;
 
