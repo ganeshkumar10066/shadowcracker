@@ -14,7 +14,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: process.env.VITE_API_URL || ' https://keith-shortcuts-flag-protecting.trycloudflare.com',
+        target: process.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com',
         changeOrigin: true,
         secure: false
       }
