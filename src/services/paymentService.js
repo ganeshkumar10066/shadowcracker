@@ -9,7 +9,7 @@ export const processPayment = async (userData) => {
             };
         }
 
-        const API_URL = ' https://keith-shortcuts-flag-protecting.trycloudflare.com';
+        const API_URL = 'https://philippines-warrant-imagine-ventures.trycloudflare.com';
         const response = await fetch(`${API_URL}/api/payment/process`, {
             method: 'POST',
             headers: {
