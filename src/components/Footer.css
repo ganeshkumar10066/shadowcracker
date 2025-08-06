@@ -1,0 +1,26 @@
+.footer {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #8e8e8e;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid #262626;
+}
+
+.blink {
+    animation: blink 1s infinite;
+    color: #00ff00;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+} 
