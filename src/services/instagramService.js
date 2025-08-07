@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:3001') + '/api';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com') + '/api';
 
 // List of session cookies (sessionid and csrftoken pairs)
 const accounts = [
