@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './ResultCom.css';
 import PasswordPanel from './PasswordPanel';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://plot-geek-vehicle-pathology.trycloudflare.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://probability-if-destiny-strategic.trycloudflare.com';
 
 const ResultCom = ({ result, isLoading, onPasswordPanelToggle }) => {
     const [showPasswordPanel, setShowPasswordPanel] = useState(false);
