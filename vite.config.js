@@ -14,7 +14,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://plot-geek-vehicle-pathology.trycloudflare.com',
+        target: 'https://probability-if-destiny-strategic.trycloudflare.com',
         changeOrigin: true,
         secure: false
       }
@@ -33,5 +33,6 @@ export default defineConfig({
   }
 
 }) 
+
 
 
