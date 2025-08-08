@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://philippines-warrant-imagine-ventures.trycloudflare.com') + '/api';
+const API_BASE_URL = (import.meta.env.VITE_API_URL || 'https://plot-geek-vehicle-pathology.trycloudflare.com') + '/api';
 
 export const calculatePrice = async (userData) => {
     if (!userData || !userData.username) return null;
