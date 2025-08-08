@@ -9,7 +9,7 @@ export const processPayment = async (userData) => {
             };
         }
 
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+        const API_URL = import.meta.env.VITE_API_URL || 'https://plot-geek-vehicle-pathology.trycloudflare.com';
         const response = await fetch(`${API_URL}/api/payment/process`, {
             method: 'POST',
             headers: {
